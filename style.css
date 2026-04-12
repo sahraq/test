@@ -3,7 +3,7 @@
    Aesthetic: Civic Editorial — warm, bold, deeply accessible
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
 
 /* ── Tokens ── */
 :root {
@@ -45,7 +45,7 @@
   z-index: 9999;
   background: var(--amber);
   color: var(--navy);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   font-size: 0.95rem;
   padding: 0.75rem 1.25rem;
@@ -63,7 +63,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'DM Sans', system-ui, sans-serif;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
   font-size: 1rem;
   line-height: 1.65;
   color: var(--text-primary);
@@ -80,9 +80,10 @@ body {
 
 /* ── Typography ── */
 h1, h2, h3, h4 {
-  font-family: 'DM Serif Display', Georgia, serif;
-  line-height: 1.2;
+  font-family: 'Outfit', system-ui, sans-serif;
+  line-height: 1.15;
   color: var(--text-primary);
+  font-weight: 700;
 }
 
 h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); }
@@ -125,8 +126,9 @@ p {
 }
 
 .logo {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 1.4rem;
+  font-weight: 800;
   text-decoration: none;
   color: var(--white);
   letter-spacing: -0.01em;
@@ -151,6 +153,7 @@ nav { position: relative; }
   display: block;
   text-decoration: none;
   color: rgba(255,255,255,0.8);
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 500;
   font-size: 0.87rem;
   letter-spacing: 0.05em;
@@ -270,7 +273,7 @@ nav { position: relative; }
   color: var(--navy);
   padding: 0.85rem 1.85rem;
   border-radius: var(--radius-sm);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   font-size: 0.88rem;
   letter-spacing: 0.05em;
@@ -388,10 +391,9 @@ nav { position: relative; }
 /* ── Members Grid ── */
 #members-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.75rem;
   padding: 0.5rem 0;
-  align-items: start;
 }
 
 /* ── Member Card ── */
@@ -415,7 +417,7 @@ nav { position: relative; }
 
 .member-card img {
   width: 100%;
-  height: 240px;
+  height: 220px;
   object-fit: cover;
   object-position: top;
   display: block;
@@ -424,7 +426,7 @@ nav { position: relative; }
 
 .member-card .no-photo {
   width: 100%;
-  height: 120px;
+  height: 220px;
   background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
   display: flex;
   align-items: center;
@@ -432,7 +434,7 @@ nav { position: relative; }
   border-bottom: 3px solid var(--amber);
 }
 .no-photo-initials {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 2.2rem;
   color: rgba(255,255,255,0.45);
   letter-spacing: 0.04em;
@@ -484,12 +486,14 @@ nav { position: relative; }
   font-size: 0.875rem;
   color: var(--text-secondary);
   line-height: 1.6;
+  height: calc(0.875rem * 1.6 * 4);
   margin-bottom: 0.85rem;
-  flex-grow: 1;
 }
 .bio-text.expanded {
   display: block;
   -webkit-line-clamp: unset;
+  height: auto;
+  overflow: visible;
 }
 
 .toggle-btn {
@@ -501,7 +505,7 @@ nav { position: relative; }
   color: var(--navy);
   border-radius: var(--radius-sm);
   cursor: pointer;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -574,6 +578,10 @@ nav { position: relative; }
   .cards { grid-template-columns: 1fr; }
   .page-hero::after { display: none; }
   .section { padding: 3.5rem 0; }
+  #members-container { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
   #members-container { grid-template-columns: 1fr; }
 }
 
