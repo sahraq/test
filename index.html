@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADAptNYC2030</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="ADAptNYC2030 — Home">ADAptNYC2030</a>
+    <nav aria-label="Primary navigation">
+      <input type="checkbox" id="check" aria-hidden="true">
+      <label for="check" class="checkbtn" aria-label="Open navigation menu" role="button" tabindex="0">☰</label>
+      <ul class="nav-list" role="list">
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <section class="hero" aria-label="Introduction">
+    <div class="container">
+      <div class="hero-card">
+        <h1>Lorem ipsum dolor sit amet consectetur</h1>
+        <p>Ut enim ad minim veniam.</p>
+        <a href="about.html" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light" aria-labelledby="cards-heading">
+    <div class="container">
+      <h2 id="cards-heading">Duis aute irure dolor</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Ut enim ad minim</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </article>
+        <article class="card">
+          <h3>Excepteur sint occaecat</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </article>
+        <article class="card">
+          <h3>Dolore eu fugiat nulla</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-muted" aria-labelledby="cta-heading">
+    <div class="container">
+      <h2 id="cta-heading">Voluptate velit esse cillume</h2>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      <br>
+      <a href="contact.html" class="btn">Get Involved</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <p>&copy; 2026 ADAptNYC2030 Initiative</p>
+  </div>
+</footer>
+
+<script>
+const checkbox = document.getElementById("check");
+const label = document.querySelector(".checkbtn");
+
+checkbox.addEventListener("change", function () {
+  document.body.style.overflow = this.checked ? "hidden" : "";
+  label.setAttribute("aria-label", this.checked ? "Close navigation menu" : "Open navigation menu");
+});
+
+label.addEventListener("keydown", function(e) {
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault();
+    checkbox.checked = !checkbox.checked;
+    checkbox.dispatchEvent(new Event("change"));
+  }
+});
+</script>
+</body>
+</html>

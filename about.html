@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | ADAptNYC2030</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="ADAptNYC2030 — Home">ADAptNYC2030</a>
+    <nav aria-label="Primary navigation">
+      <input type="checkbox" id="check" aria-hidden="true">
+      <label for="check" class="checkbtn" aria-label="Open navigation menu" role="button" tabindex="0">☰</label>
+      <ul class="nav-list" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <section class="page-hero" aria-labelledby="page-title">
+    <div class="container">
+      <h1 id="page-title">About Us</h1>
+    </div>
+  </section>
+
+  <section class="section section-light" aria-labelledby="committee-heading">
+    <div class="container">
+      <p>
+        ADAptNYC2030 was created to address long-standing accessibility gaps
+        in New York City's cultural sector.
+      </p>
+
+      <h2 id="committee-heading" style="margin-top: 40px;">Steering Committee</h2>
+      <div id="members-container" aria-live="polite" aria-label="Steering committee members"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <p>&copy; 2026 ADAptNYC2030 Initiative</p>
+  </div>
+</footer>
+
+<script>
+const checkbox = document.getElementById("check");
+const label = document.querySelector(".checkbtn");
+
+checkbox.addEventListener("change", function () {
+  document.body.style.overflow = this.checked ? "hidden" : "";
+  label.setAttribute("aria-label", this.checked ? "Close navigation menu" : "Open navigation menu");
+});
+
+label.addEventListener("keydown", function(e) {
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault();
+    checkbox.checked = !checkbox.checked;
+    checkbox.dispatchEvent(new Event("change"));
+  }
+});
+</script>
+<script src="script.js"></script>
+</body>
+</html>
