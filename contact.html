@@ -3,17 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | ADAptNYC2030</title>
+<title>Contact | CulturalAccessNYC</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
 <a class="skip-link" href="#main-content">Skip to main content</a>
-
 <header class="site-header" role="banner">
   <div class="container header-inner">
-    <a href="index.html" class="logo" aria-label="ADAptNYC2030 — Home">ADAptNYC2030</a>
+    <a href="index.html" class="logo" aria-label="CulturalAccessNYC — Home">CulturalAccessNYC</a>
     <nav aria-label="Primary navigation">
       <input type="checkbox" id="check" aria-hidden="true">
       <label for="check" class="checkbtn" aria-label="Open navigation menu" role="button" tabindex="0">☰</label>
@@ -27,47 +24,159 @@
     </nav>
   </div>
 </header>
-
 <main id="main-content">
 
   <section class="page-hero" aria-labelledby="page-title">
     <div class="container">
       <h1 id="page-title">Contact Us</h1>
+      <p class="page-hero-sub">We'd love to hear from you — whether you're a cultural institution, a disabled artist, a funder, or an advocate.</p>
     </div>
   </section>
 
-  <section class="section section-light">
-    <div class="container">
-      <p>
-        ADAptNYC2030 was created to address long-standing accessibility gaps
-        in New York City's cultural sector.
-      </p>
+  <section class="section section-light" aria-labelledby="contact-heading">
+    <div class="container contact-layout">
+
+      <!-- Ways to connect -->
+      <div class="contact-info">
+        <h2 id="contact-heading">Ways to Connect</h2>
+        <p style="margin-bottom: 2rem;">CulturalAccessNYC is a growing initiative and we're actively looking for partners, collaborators, and community members who share our commitment to disability equity in NYC's cultural sector.</p>
+
+        <div class="contact-reasons">
+          <div class="contact-reason">
+            <div class="contact-reason-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <div>
+              <h3>Cultural Institutions</h3>
+              <p>Looking to improve accessibility at your organization? We offer audits, training, and strategic planning support.</p>
+            </div>
+          </div>
+          <div class="contact-reason">
+            <div class="contact-reason-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <div>
+              <h3>Disabled Artists &amp; Advocates</h3>
+              <p>We center disabled voices in our work. Share your experience, get involved in programming, or join our community network.</p>
+            </div>
+          </div>
+          <div class="contact-reason">
+            <div class="contact-reason-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <div>
+              <h3>Funders &amp; Partners</h3>
+              <p>Interested in supporting this work? We're actively seeking funding partnerships and institutional collaborators.</p>
+            </div>
+          </div>
+          <div class="contact-reason">
+            <div class="contact-reason-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div>
+              <h3>Press &amp; Media</h3>
+              <p>Covering disability equity in the arts? We're available for comment, interviews, and data on accessibility in NYC's cultural sector.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accessibility-note" role="note" aria-label="Accessibility commitment">
+          <div class="accessibility-note-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <strong>Our accessibility commitment</strong>
+            <p>We are committed to communicating accessibly. If you need any accommodation to connect with us — including ASL interpretation, captioning, large-print materials, or alternative formats — please let us know and we will do our best to meet your needs.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact form -->
+      <div class="contact-form-wrap">
+        <h2>Send a Message</h2>
+        <p style="margin-bottom: 1.75rem; color: var(--text-muted);">All fields marked with * are required.</p>
+        <div class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name" class="form-label">Name *</label>
+            <input type="text" id="name" name="name" autocomplete="name" required aria-required="true" class="form-input" placeholder="Your full name">
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email *</label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" class="form-input" placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label for="org" class="form-label">Organization (if applicable)</label>
+            <input type="text" id="org" name="org" autocomplete="organization" class="form-input" placeholder="Where you work or create">
+          </div>
+          <div class="form-group">
+            <label for="reason" class="form-label">I am reaching out as a... *</label>
+            <select id="reason" name="reason" required aria-required="true" class="form-input form-select">
+              <option value="" disabled selected>Select one</option>
+              <option value="institution">Cultural institution or organization</option>
+              <option value="artist">Disabled artist or community member</option>
+              <option value="funder">Funder or philanthropic partner</option>
+              <option value="advocate">Disability advocate</option>
+              <option value="press">Press or researcher</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message *</label>
+            <textarea id="message" name="message" required aria-required="true" class="form-input form-textarea" rows="5" placeholder="Tell us about yourself and how you'd like to connect."></textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Preferred contact method</label>
+            <div class="radio-group" role="group" aria-label="Preferred contact method">
+              <label class="radio-label"><input type="radio" name="contact-pref" value="email" checked> Email</label>
+              <label class="radio-label"><input type="radio" name="contact-pref" value="phone"> Phone</label>
+              <label class="radio-label"><input type="radio" name="contact-pref" value="either"> Either</label>
+            </div>
+          </div>
+          <button type="button" class="btn" id="submit-btn" style="width: 100%; justify-content: center;">Send Message</button>
+          <div id="form-success" class="form-success" hidden role="alert">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Thank you! We'll be in touch soon.</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
 </main>
-
 <footer class="footer" role="contentinfo">
   <div class="container">
-    <p>&copy; 2026 ADAptNYC2030 Initiative</p>
+    <p>&copy; 2026 CulturalAccessNYC Initiative</p>
   </div>
 </footer>
-
 <script>
 const checkbox = document.getElementById("check");
 const label = document.querySelector(".checkbtn");
-
 checkbox.addEventListener("change", function () {
   document.body.style.overflow = this.checked ? "hidden" : "";
   label.setAttribute("aria-label", this.checked ? "Close navigation menu" : "Open navigation menu");
 });
-
 label.addEventListener("keydown", function(e) {
   if (e.key === "Enter" || e.key === " ") {
     e.preventDefault();
     checkbox.checked = !checkbox.checked;
     checkbox.dispatchEvent(new Event("change"));
   }
+});
+
+document.getElementById('submit-btn').addEventListener('click', function() {
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const reason = document.getElementById('reason').value;
+  const message = document.getElementById('message').value.trim();
+  if (!name || !email || !reason || !message) {
+    alert('Please fill in all required fields.');
+    return;
+  }
+  document.getElementById('contact-form').style.opacity = '0.4';
+  document.getElementById('contact-form').style.pointerEvents = 'none';
+  document.getElementById('form-success').hidden = false;
+  document.getElementById('form-success').focus();
 });
 </script>
 </body>

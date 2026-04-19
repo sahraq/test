@@ -3,17 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resources | ADAptNYC2030</title>
+<title>Resources | CulturalAccessNYC</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
 <a class="skip-link" href="#main-content">Skip to main content</a>
-
 <header class="site-header" role="banner">
   <div class="container header-inner">
-    <a href="index.html" class="logo" aria-label="ADAptNYC2030 — Home">ADAptNYC2030</a>
+    <a href="index.html" class="logo" aria-label="CulturalAccessNYC — Home">CulturalAccessNYC</a>
     <nav aria-label="Primary navigation">
       <input type="checkbox" id="check" aria-hidden="true">
       <label for="check" class="checkbtn" aria-label="Open navigation menu" role="button" tabindex="0">☰</label>
@@ -27,47 +24,252 @@
     </nav>
   </div>
 </header>
-
 <main id="main-content">
 
   <section class="page-hero" aria-labelledby="page-title">
     <div class="container">
       <h1 id="page-title">Resources</h1>
+      <p class="page-hero-sub">Tools, guides, and organizations to help make NYC's cultural sector more accessible.</p>
     </div>
   </section>
 
-  <section class="section section-light">
+  <!-- Filter tabs -->
+  <div class="resource-filter-bar" role="navigation" aria-label="Filter resources by category">
     <div class="container">
-      <p>
-        ADAptNYC2030 was created to address long-standing accessibility gaps
-        in New York City's cultural sector.
-      </p>
+      <div class="filter-tabs" role="tablist">
+        <button class="filter-tab active" role="tab" aria-selected="true" data-filter="all">All</button>
+        <button class="filter-tab" role="tab" aria-selected="false" data-filter="guides">Guides &amp; Toolkits</button>
+        <button class="filter-tab" role="tab" aria-selected="false" data-filter="orgs">Organizations</button>
+        <button class="filter-tab" role="tab" aria-selected="false" data-filter="legal">Legal &amp; Policy</button>
+        <button class="filter-tab" role="tab" aria-selected="false" data-filter="funding">Funding</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section-light" aria-labelledby="resources-list-heading">
+    <div class="container">
+      <h2 id="resources-list-heading" class="sr-only">Resource Listings</h2>
+
+      <div class="resource-grid" id="resource-grid">
+
+        <article class="resource-card" data-category="guides" tabindex="0">
+          <div class="resource-tag">Guide</div>
+          <h3>Accessibility Planning Toolkit for Cultural Organizations</h3>
+          <p>A practical step-by-step framework for arts organizations to assess current accessibility, set goals, and build toward experiential equity.</p>
+          <div class="resource-meta">
+            <span>PDF · 48 pages</span>
+          </div>
+        </article>
+
+        <article class="resource-card" data-category="legal" tabindex="0">
+          <div class="resource-tag resource-tag--legal">Legal</div>
+          <h3>ADA Title III: What Cultural Institutions Need to Know</h3>
+          <p>An overview of the legal obligations under Title III of the Americans with Disabilities Act as they apply to museums, theaters, and cultural venues.</p>
+          <div class="resource-meta">
+            <span>Web · ADA.gov</span>
+          </div>
+        </article>
+
+        <article class="resource-card" data-category="orgs" tabindex="0">
+          <div class="resource-tag resource-tag--org">Organization</div>
+          <h3>Hands On Sign Interpreted Performances</h3>
+          <p>NYC-based nonprofit providing sign language interpreted theater access at major On and Off-Broadway venues for over 40 years.</p>
+          <div class="resource-meta">
+            <a href="http://handson.org" target="_blank" rel="noopener noreferrer" class="resource-link">handson.org ↗</a>
+          </div>
+        </article>
+
+        <article class="resource-card" data-category="orgs" tabindex="0">
+          <div class="resource-tag resource-tag--org">Organization</div>
+          <h3>ConsultAbility</h3>
+          <p>A nonprofit advancing accessibility in the performing arts through consultation, training, and access planning for organizations across NYC and beyond.</p>
+          <div class="resource-meta">
+            <a href="https://consultability.org" target="_blank" rel="noopener noreferrer" class="resource-link">consultability.org ↗</a>
+          </div>
+        </article>
+
+        <article class="resource-card" data-category="guides" tabindex="0">
+          <div class="resource-tag">Guide</div>
+          <h3>Writing Accessible Alt Text for Arts Content</h3>
+          <p>How to write meaningful image descriptions for artworks, performances, and cultural events — with examples from NYC institutions.</p>
+          <div class="resource-meta">
+            <span>Web guide</span>
+          </div>
+        </article>
+
+        <article class="resource-card" data-category="funding" tabindex="0">
+          <div class="resource-tag resource-tag--funding">Funding</div>
+          <h3>NYC Cultural Accessibility Grants</h3>
+          <p>An overview of city, state, and private funding sources available to cultural organizations seeking to improve accessibility infrastructure and programming.</p>
+          <div class="resource-meta">
+            <span>Updated 2026</span>
+          </div>
+        </article>
+
+        <article class="resource-card" data-category="legal" tabindex="0">
+          <div class="resource-tag resource-tag--legal">Legal</div>
+          <h3>NYC Human Rights Law &amp; Disability</h3>
+          <p>The NYC Human Rights Law often provides broader protections than the ADA. Learn how these stronger local provisions affect cultural institutions.</p>
+          <div class="resource-meta">
+            <span>Web · nyc.gov</span>
+          </div>
+        </article>
+
+        <article class="resource-card" data-category="orgs" tabindex="0">
+          <div class="resource-tag resource-tag--org">Organization</div>
+          <h3>Accessible Travel NYC</h3>
+          <p>Working at the intersection of disability, culture, and tourism — partnering with institutions like Lincoln Center and SUMMIT One Vanderbilt.</p>
+          <div class="resource-meta">
+            <a href="https://www.linkedin.com/in/lakshmeelachhmanpersad/" target="_blank" rel="noopener noreferrer" class="resource-link">Learn more ↗</a>
+          </div>
+        </article>
+
+        <article class="resource-card" data-category="guides" tabindex="0">
+          <div class="resource-tag">Guide</div>
+          <h3>Captioning &amp; Audio Description: A Practical Guide</h3>
+          <p>Vendor resources, cost estimates, and best practices for implementing captioning and audio description in live performance and digital content.</p>
+          <div class="resource-meta">
+            <span>PDF · 22 pages</span>
+          </div>
+        </article>
+
+        <article class="resource-card" data-category="funding" tabindex="0">
+          <div class="resource-tag resource-tag--funding">Funding</div>
+          <h3>Disability &amp; Philanthropy Forum</h3>
+          <p>Resources on disability-inclusive grantmaking and funding strategies — connecting arts organizations with philanthropic partners who prioritize access.</p>
+          <div class="resource-meta">
+            <span>disabilityphilanthropy.org</span>
+          </div>
+        </article>
+
+      </div>
+
+      <p id="no-results" class="no-results-msg" hidden>No resources found in this category.</p>
+    </div>
+  </section>
+
+  <!-- Glossary accordion -->
+  <section class="section section-muted" aria-labelledby="glossary-heading">
+    <div class="container">
+      <span class="section-label" style="color: var(--amber-light);">Terminology</span>
+      <h2 id="glossary-heading">Key Terms</h2>
+      <p style="color: rgba(255,255,255,0.72); margin-bottom: 2.5rem; max-width: 58ch;">Understanding the language of disability equity is the first step toward meaningful change.</p>
+
+      <div class="accordion" role="list">
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-btn" aria-expanded="false" aria-controls="acc-1">
+            <span>Experiential Equity</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-body" id="acc-1" hidden>
+            <p>The standard by which disabled people have access to cultural experiences of equivalent quality and dignity to those available to non-disabled people. Goes well beyond ramp access or a single interpreted performance.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-btn" aria-expanded="false" aria-controls="acc-2">
+            <span>Intersectionality</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-body" id="acc-2" hidden>
+            <p>The way disability intersects with race, class, gender, and other identities to create overlapping and compounded forms of disadvantage. Effective accessibility work must account for these intersections — not treat disability as a single, uniform experience.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-btn" aria-expanded="false" aria-controls="acc-3">
+            <span>Universal Design</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-body" id="acc-3" hidden>
+            <p>The design of environments, programs, and content that can be used by all people without adaptation or specialized design. In cultural contexts, this means building access in from the start — not retrofitting it afterward.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-btn" aria-expanded="false" aria-controls="acc-4">
+            <span>Nothing About Us Without Us</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-body" id="acc-4" hidden>
+            <p>A core disability rights principle: disabled people must be involved in decisions that affect them — not just consulted as an afterthought. For cultural organizations, this means including disabled people in leadership, programming, and governance, not just as audience members.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-btn" aria-expanded="false" aria-controls="acc-5">
+            <span>Social Model of Disability</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-body" id="acc-5" hidden>
+            <p>The view that disability is caused by barriers in society (physical, attitudinal, systemic), not by a person's impairment. Contrasts with the medical model, which locates the "problem" in the individual. The social model shapes how CulturalAccessNYC thinks about our work.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
 </main>
-
 <footer class="footer" role="contentinfo">
   <div class="container">
-    <p>&copy; 2026 ADAptNYC2030 Initiative</p>
+    <p>&copy; 2026 CulturalAccessNYC Initiative</p>
   </div>
 </footer>
-
 <script>
 const checkbox = document.getElementById("check");
 const label = document.querySelector(".checkbtn");
-
 checkbox.addEventListener("change", function () {
   document.body.style.overflow = this.checked ? "hidden" : "";
   label.setAttribute("aria-label", this.checked ? "Close navigation menu" : "Open navigation menu");
 });
-
 label.addEventListener("keydown", function(e) {
   if (e.key === "Enter" || e.key === " ") {
     e.preventDefault();
     checkbox.checked = !checkbox.checked;
     checkbox.dispatchEvent(new Event("change"));
   }
+});
+
+// Filter tabs
+const tabs = document.querySelectorAll('.filter-tab');
+const cards = document.querySelectorAll('.resource-card');
+const noResults = document.getElementById('no-results');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+    tab.classList.add('active');
+    tab.setAttribute('aria-selected', 'true');
+    const filter = tab.dataset.filter;
+    let visible = 0;
+    cards.forEach(card => {
+      const show = filter === 'all' || card.dataset.category === filter;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    noResults.hidden = visible > 0;
+  });
+});
+
+// Accordion
+document.querySelectorAll('.accordion-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const body = document.getElementById(btn.getAttribute('aria-controls'));
+    const isOpen = btn.getAttribute('aria-expanded') === 'true';
+    // close all
+    document.querySelectorAll('.accordion-btn').forEach(b => {
+      b.setAttribute('aria-expanded', 'false');
+      b.querySelector('.accordion-icon').textContent = '+';
+      document.getElementById(b.getAttribute('aria-controls')).hidden = true;
+    });
+    if (!isOpen) {
+      btn.setAttribute('aria-expanded', 'true');
+      btn.querySelector('.accordion-icon').textContent = '−';
+      body.hidden = false;
+    }
+  });
 });
 </script>
 </body>
