@@ -211,10 +211,8 @@ nav { position: relative; }
   inset: 0;
   background: linear-gradient(
     105deg,
-    rgba(0,48,135,0.88) 0%,
-    rgba(0,48,135,0.58) 55%,
-    rgba(0,48,135,0.28) 100%
-  );
+    rgba(0,48,135,0.28) 10%
+  );//
 }
 
 .hero .container {
