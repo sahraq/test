@@ -1,3 +1,16 @@
+// Per-person image focal points — keyed by headshot filename
+// Values are CSS object-position strings tuned to each photo
+const HEADSHOT_FOCAL_POINTS = {
+  'Sarah.jpg':    '50% 30%',  // face centered, slightly upper half
+  'Luke.jpg':     '50% 25%',  // seated café shot, face upper half
+  'Lisa.jpeg':    '50% 25%',  // face upper-center, voluminous hair
+  'Lakshmee.jpeg':'50% 35%',  // square-ish crop, face center
+  'Beth.jpg':     '50% 20%',  // tall portrait, face in upper third
+  'DJ.jpg':       '50% 20%',  // tall portrait, face in upper third
+  'Miranda.JPG':  '50% 20%',  // tall portrait, face upper third
+  'Sofiya.jpg':   '50% 30%',  // close headshot, face center
+};
+
 // Fetch and render steering committee members
 fetch('SteeringBios.json')
   .then(response => response.json())
@@ -19,6 +32,10 @@ fetch('SteeringBios.json')
         img.src = member.headshot;
         img.alt = member.altText || `Headshot of ${member.name}`;
         img.loading = 'lazy';
+        // Apply per-person focal point so each face is centered in the card frame
+        const filename = member.headshot.split('/').pop();
+        const focalPoint = HEADSHOT_FOCAL_POINTS[filename] || '50% 20%';
+        img.style.objectPosition = focalPoint;
         card.appendChild(img);
       } else {
         const placeholder = document.createElement('div');
